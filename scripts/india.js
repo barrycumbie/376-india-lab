@@ -97,7 +97,23 @@ $(function () {
     });
   });
 
-  console.log("user name: " + $("#noSpaces").val());
+  $('#submitButton').click(function(){
+
+    if ($('#noSpaces').val()) {
+      console.log("there is something in this text box");
+    } else {
+      console.log("there is NOTHING in this text box");
+      $('#noSpaces').removeClass("success").addClass("error");
+      //bring focus to it
+      //change the placeholder text 
+
+    }
+
+  })
+
+
+
+
 
   // end of doc ready f/n
 });
