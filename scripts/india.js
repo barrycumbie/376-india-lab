@@ -1,7 +1,13 @@
+//our shorthand doc ready function
+//currently everything is nested in here 
+//todo: define functions and put them outside of this, then only call them from in here. 
 $(function () {
   //regular expression of only letters
   let alphaRegex = /^[a-zA-Z]*$/;
 
+  //my array of petNames
+  //its a nested array, meaning, item 0 "cat" has an array in the item
+  //this is used for the "dependent inputs" in example #5
   let petNames = [
     ["cat", ["Jonas", "Salvador", "Cheezer", "Captain Fluffy"]],
     ["dog", ["Earl", "Pop Tart", "Dawg"]],
@@ -12,9 +18,16 @@ $(function () {
     ["bear", ["Barry"]]
   ];
 
+  //example #1 code: ensures no spaces on blur
+  //blur = when user clicks out of that DOM element (in this case it is a text input)
   $("#noSpaces").blur(function () {
+    //first grab the value from the textbox and put in a variable
     let inputVal = $(this).val();
+    //initialize an string variable that represents a space
     let strSpace = " ";
+    //found this online, initialize a variable to count number of spaces in a string
+    //takes the variable of the input and runs the split() method
+    //which is an array method to chop it up whenever it finds the search parameter, in the case a space (" ")
     let spaceCount = inputVal.split(" ").length - 1;
 
     console.log(spaceCount);
@@ -101,9 +114,10 @@ $(function () {
 
     if ($('#noSpaces').val()) {
       console.log("there is something in this text box");
+      $('#noSpaces').removeClass("error")
     } else {
       console.log("there is NOTHING in this text box");
-      $('#noSpaces').removeClass("success").addClass("error");
+      $('#noSpaces').removeClass("success").addClass("error").focus();
       //bring focus to it
       //change the placeholder text 
 
