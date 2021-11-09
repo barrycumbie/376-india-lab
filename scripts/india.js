@@ -132,7 +132,8 @@ $(function () {
     
     //a) load in JSON data
     $.getJSON("demo.json", function(result){
-      $.each(result, function(i, field){
+      console.log(i, field);
+      $.each(result, function (i, field) {
         $("#showData").append(field + " ");
       });
     });
