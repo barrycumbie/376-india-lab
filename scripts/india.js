@@ -131,7 +131,7 @@ $(function () {
     console.log('in this load click event');
     
     //a) load in JSON data
-    $.getJSON("../demo.json", function(result){
+    $.getJSON("demo.json", function(result){
       $.each(result, function(i, field){
         $("#showData").append(field + " ");
       });
