@@ -129,14 +129,13 @@ $(function () {
   $('#btnLoad').on('click', function () {
       
     console.log('in this load click event');
-
+    
     //a) load in JSON data
-    // $.getJSON("../demo.json", function(result){
-    //   $.each(result, function(i, field){
-    //     $("div").append(field + " ");
-    //   });
-    // });
-
+    $.getJSON("../demo.json", function(result){
+      $.each(result, function(i, field){
+        $("div").append(field + " ");
+      });
+    });
 
     //b) show it. 
 
