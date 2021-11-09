@@ -135,8 +135,7 @@ $(function () {
     //   $.each(result, function(i, field){
     //     $("div").append(field + " ");
     //   });
-
-    });
+    // });
 
 
     //b) show it. 
