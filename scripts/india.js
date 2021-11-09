@@ -110,7 +110,7 @@ $(function () {
     });
   });
 
-  $('#submitButton').click(function(){
+  $('#submitButton').click(function () {
 
     if ($('#noSpaces').val()) {
       console.log("there is something in this text box");
@@ -120,11 +120,31 @@ $(function () {
       $('#noSpaces').removeClass("success").addClass("error").focus();
       //bring focus to it
       //change the placeholder text 
-
     }
+  });
 
-  })
 
+  //button to load in JSON object
+  //example: https://www.w3schools.com/jquery/ajax_getjson.asp
+  $('#btnLoad').on('click', function () {
+      
+    console.log('in this load click event');
+
+    //a) load in JSON data
+    $.getJSON("../demo.json", function(result){
+      $.each(result, function(i, field){
+        $("div").append(field + " ");
+      });
+
+    });
+
+
+    //b) show it. 
+
+    //c) put it in the correct form spots. 
+
+
+  });
 
 
 
