@@ -133,7 +133,7 @@ $(function () {
     //a) load in JSON data
     $.getJSON("../demo.json", function(result){
       $.each(result, function(i, field){
-        $("div").append(field + " ");
+        $("#showData").append(field + " ");
       });
     });
 
