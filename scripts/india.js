@@ -199,7 +199,7 @@ $(function() {
     // });
     // ajxReq.success( function ( data, status, jqXhr ) {
     // $( '#p1' ).append( '<h3> The json data details is : </h3>');
-    // $( '#p1' ).append( '<p> Date : ' + data.date + '</p>');
+    // $( '#p1' ).append( '<p> Dagitte : ' + data.date + '</p>');
     // $( '#p1' ).append( '<p> Milliseconds_since_epoch : ' + data.milliseconds_since_epoch + '</p>');
     // $( '#p1' ).append ('<p> Time: ' + data.time + '</p>');
     // $( '#p1' ).append( '<p> The request status is : ' + status + '</p>');
