@@ -1,99 +1,107 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>india lab examples</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
-<link rel="stylesheet" href="css/india.css">
+    <meta charset="UTF-8">
+    <title>india lab examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/india.css">
 
 </head>
 
 <body>
-<nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
-  <p class="navbar-brand ps-3">India Lab Examples</p>
-  <ul class="navbar-nav">
-    <li class="navitem"><a class="nav-link" href="https://www.w3schools.com/bootstrap5/bootstrap_forms.php" target="_blank">BS5 Forms @ W3C-School</a> </li>
-    <li class="navitem"><a class="nav-link" href="https://codepen.io/barrycumbie/pen/abyVxmV" target="_blank">See the CodePen version</a> </li>
-      </ul>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
+        <p class="navbar-brand ps-3">India Lab Examples</p>
+        <ul class="navbar-nav">
+            <li class="navitem"><a class="nav-link" href="https://www.w3schools.com/bootstrap5/bootstrap_forms.php" target="_blank">BS5 Forms @ W3C-School</a> </li>
+            <li class="navitem"><a class="nav-link" href="https://codepen.io/barrycumbie/pen/abyVxmV" target="_blank">See the CodePen version</a> </li>
+            <li class="navitem"><button id="btnLoadData" class="btn btn-secondary">load json</button></li>
+        </ul>
 
-</nav>
 
-<div class="container-fluid">
+    </nav>
 
-  <!--   first row -->
-  <div class="row p-1.5 m-1.5">
+    <div id="dataContainer">
 
-    <!--   no spaces blur  -->
-    <div class="col-md-5 card">
-      <div class="card-body">
-        <h4 class="card-title">Example #1. </h4>
-        <h5>validate when clicked off (blur)</h5>
-        <label for="noSpaces" class="form-label">User Name</label>
-        <input id="noSpaces" class="form-control" type="text" placeholder="Enter User Name (no spaces)" name="noSpaces">
-        <!-- this is where the validation will appear, the .next() dom object <p> -->
-        <p class="card-footer"></p>
-      </div>
-      <p></p>
     </div>
 
-    <!-- only numbers keyup (or keydown)   -->
-    <div class="col-md-5 m-l-2 card">
-      <div class="card-body">
+    <div class="container-fluid">
 
-        <h4 class="card-title">Example #2. </h4>
-        <h5>only allow numbers (keyPress)</h5>
+        <!--   first row -->
+        <div class="row p-1.5 m-1.5">
 
-        <label for="noAlpha" class="form-label">Account No. </label>
-        <input id="noAlpha" class="form-control" type="text" placeholder="Enter Account Number (only numbers)" name="noAlpha">
-        <!-- this is where the validation will appear, the .next() dom object <p> -->
-        <p class="card-footer"></p>
+            <!--   no spaces blur  -->
+            <div class="col-md-5 card">
+                <div class="card-body">
+                    <h4 class="card-title">Example #1. </h4>
+                    <h5>validate when clicked off (blur)</h5>
+                    <label for="noSpaces" class="form-label">User Name</label>
+                    <input id="noSpaces" class="form-control" type="text" placeholder="Enter User Name (no spaces)" name="noSpaces">
+                    <!-- this is where the validation will appear, the .next() dom object <p> -->
+                    <p class="card-footer"></p>
+                </div>
+                <p></p>
+            </div>
 
-      </div>
-    </div>
-  </div>
+            <!-- only numbers keyup (or keydown)   -->
+            <div class="col-md-5 m-l-2 card">
+                <div class="card-body">
 
-  <!-- second row -->
-  <div class="row">
-    <div class="col-md-5 offset-md-1 card">
-      <div class="card-body">
+                    <h4 class="card-title">Example #2. </h4>
+                    <h5>only allow numbers (keyPress)</h5>
 
-        <h4 class="card-title">Example #3. </h4>
-        <h5>only allow alpha on(input)</h5>
+                    <label for="noAlpha" class="form-label">Account No. </label>
+                    <input id="noAlpha" class="form-control" type="text" placeholder="Enter Account Number (only numbers)" name="noAlpha">
+                    <!-- this is where the validation will appear, the .next() dom object <p> -->
+                    <p class="card-footer"></p>
 
-        <label for="noNumbers" class="form-label">User Name</label>
-        <input id="noNumbers" class="form-control" type="text" placeholder="Enter User Name (no numbers)" name="noNumbers">
-        <!-- this is where the validation will appear, the .next() dom object <p> -->
-        <p class="card-footer"></p>
+                </div>
+            </div>
+        </div>
 
-      </div>
-    </div>
+        <!-- second row -->
+        <div class="row">
+            <div class="col-md-5 offset-md-1 card">
+                <div class="card-body">
 
-    <div class="col-md-5 offset-md-1 card">
-      <div class="card-body">
+                    <h4 class="card-title">Example #3. </h4>
+                    <h5>only allow alpha on(input)</h5>
 
-        <h4 class="card-title">Example #4. </h4>
-        <h5>same as #3 w/keydown</h5>
+                    <label for="noNumbers" class="form-label">User Name</label>
+                    <input id="noNumbers" class="form-control" type="text" placeholder="Enter User Name (no numbers)" name="noNumbers">
+                    <!-- this is where the validation will appear, the .next() dom object <p> -->
+                    <p class="card-footer"></p>
 
-        <label for="noNumbersDown" class="form-label">User Name</label>
-        <input id="noNumbersDown" class="form-control" type="text" placeholder="Enter User Name (no numbers)" name="noNumbersDown">
-        <!-- this is where the validation will appear, the .next() dom object <p> -->
-        <p class="card-footer"></p>
+                </div>
+            </div>
 
-      </div>
-    </div>
-  </div>
+            <div class="col-md-5 offset-md-1 card">
+                <div class="card-body">
 
-  <!--   third row -->
-  <div class="row">
-    <div class="col-md-5 offset-md-1 card">
-      <div class="card-body">
+                    <h4 class="card-title">Example #4. </h4>
+                    <h5>same as #3 w/keydown</h5>
 
-        <h4 class="card-title">Example #5. </h4>
-        <h5>one input => to another</h5>
+                    <label for="noNumbersDown" class="form-label">User Name</label>
+                    <input id="noNumbersDown" class="form-control" type="text" placeholder="Enter User Name (no numbers)" name="noNumbersDown">
+                    <!-- this is where the validation will appear, the .next() dom object <p> -->
+                    <p class="card-footer"></p>
 
-        <label for="petKind" class="form-label">Pet Species</label>
-        <select id="petKind" class="form-select" type="select" name="petName">
+                </div>
+            </div>
+        </div>
+
+        <!--   third row -->
+        <div class="row">
+            <div class="col-md-5 offset-md-1 card">
+                <div class="card-body">
+
+                    <h4 class="card-title">Example #5. </h4>
+                    <h5>one input => to another</h5>
+
+                    <label for="petKind" class="form-label">Pet Species</label>
+                    <select id="petKind" class="form-select" type="select" name="petName">
           <option value="" disabled selected>Select your option</option>
           <option value="dog">🐶</option>
           <option value="cat">🐱</option>
@@ -102,35 +110,37 @@
           <option value="frog">🐸</option>
           <option value="kuola">🐨</option>
         </select>
-        <hr />
-        <label for="petName" class="form-label">Pet Names</label>
-        <select id="petName" class="form-select" type="select" name="petName" disabled>
+                    <hr />
+                    <label for="petName" class="form-label">Pet Names</label>
+                    <select id="petName" class="form-select" type="select" name="petName" disabled>
           <option>☝🏼select pet species first</option>
         </select>
 
-      </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-2 offset-md-5">
+                <button id="submitButton" class="btn btn-primary" type="submit">Submit your Form!</button>
+            </div>
+        </div>
+
+
+
+        <!--   ends row container -->
     </div>
 
-   
-
-  </div>
-
-<div class="row">
-
-  <div class="col-md-2 offset-md-5"> 
-  <button id="submitButton" class="btn btn-primary" type="submit">Submit your Form!</button>
-</div>
-</div>
-
-
-
-<!--   ends row container -->
-</div>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
-<script  src="scripts/india.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <!-- <script src="scripts/india.js"></script> -->
+    <script src="scripts/ajax.js"></script>
 
 </body>
+
 </html>
