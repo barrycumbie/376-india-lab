@@ -13,11 +13,21 @@ $('#btnLoadData').click(function() {
     $.ajax({
         url: jsonURL,
         dataType: "json",
-        success: function(result) {
-            //data = $.parseJSON(result);
-            console.log(result);
-            $.each(result, function(result) {
-                $("#dataContainer").append(result + " ");
+        success: function(data) {
+            //can log either the entire data or invoke specific properties data.zipCode...
+            console.log(data.firstName);
+            
+            //loads first name into my first input box (in example #1)
+            $("#noSpaces").val(data.firstName);
+            
+            $.each(data, function (key, val) {
+                //step through results
+                console.log(key, val);
+                //get each data item
+                //put it in the right place
+                //$("#dataContainer").append(key + " " + val);
+                $(`#${key}`).val(val);
+              
             });
         }
     });
