@@ -126,7 +126,7 @@ $(function() {
     })
 
     //loading in JSON data from w3c:https://www.w3schools.com/jquery/ajax_getjson.asp
-    $('#btnLoadData').click(function() {
+    $('#DONOTFIRETHISCODE').click(function() {
         console.log("clicked");
 
         // let jsonURL = "https://www.w3schools.com/jquery/demo_ajax_json.js";

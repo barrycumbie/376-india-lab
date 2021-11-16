@@ -6,9 +6,9 @@ $('#btnLoadData').click(function() {
 
     //let jsonURL = "https://www.w3schools.com/jquery/demo_ajax_json.js";
 
-    //let jsonURL = "demo.json";
+    let jsonURL = "demo.json";
 
-    let jsonURL = "https://barrycumbie.github.io/376-india-lab/demo.json";
+    // let jsonURL = "https://barrycumbie.github.io/376-india-lab/demo.json";
 
     $.ajax({
         url: jsonURL,
@@ -21,14 +21,6 @@ $('#btnLoadData').click(function() {
             });
         }
     });
-
-    // $.ajax({
-    //     url: jsonURL,
-    //     jsonp: "callback",
-    //     dataType: "jsonp",
-    //     data: { format: "json" },
-    //     success: function(response) { console.log(response); }
-    // });
 });
 
 
