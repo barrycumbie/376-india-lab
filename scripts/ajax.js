@@ -4,9 +4,9 @@
 $('#btnLoadData').click(function() {
     console.log("clicked");
 
-    //let jsonURL = "https://www.w3schools.com/jquery/demo_ajax_json.js";
+    let jsonURL = "https://www.w3schools.com/jquery/demo_ajax_json.js";
 
-    let jsonURL = "demo.json";
+//     let jsonURL = "demo.json";
 
     // let jsonURL = "https://barrycumbie.github.io/376-india-lab/demo.json";
 
